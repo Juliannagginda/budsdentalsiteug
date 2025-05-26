@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="device-width,initial-scale=1:0"/>
+    <title>
+      Buds Dental Services
+    </title>
+    <link rel="atylesheet" href="style.css"/>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      body,h1,h2,p,ul{
+        margin: 0;
+        padding:0;
+      }
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        background: rgb(255, 255, 255);
+        color: #333;
+      }
+      header{
+        background-color: #22acf7;
+        color: white;
+        padding:20px;
+        text-align: center;
+      }
+      nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      nav ul li{
+        margin: 0 15px;
+      }
+      nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .hero{
+        background-color: #caf0f8;
+        padding: 40px;
+        text-align: center;
+
+      }
+      .services,.about,.location,.contacts{
+        padding: 30px;
+        text-align: center;
+      }
+      .location{
+        background-color: #f0f4f8;
+      }
+      .contacts{
+        background-color: #caf0f8;
+        font-weight: lighter;
+        margin-bottom: 20px;
+        
+      }
+      .map-container{
+        margin-top: 20px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .services ul{
+        list-style: none;
+        margin-top: 15px;
+      }
+      .services ul li{
+        margin-bottom: 10px;
+      }
+      .services ul li ul {
+        display: flexbox;
+        list-style: none;
+      }
+      .artificial{
+        margin-left: 100px;
+        margin-top: 0;
+      }
+      .dentures{
+        margin-left: 70px;
+      }
+    
+      .appointment{
+        padding: 30px;
+        background-color: #e0f7fa;
+        text-align: center;
+      }
+      form{
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: left;
+      }
+      form label{
+        display: block;
+        margin: 10px 0 5px;
+      }
+      form input, form textarea{
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      form button{
+        background-color: #0077b6;
+        color: white;
+        padding: 10px 20px;
+        border:none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .gallery{
+        padding:30px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+      }
+      .gallery-images{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:15px;
+        margin-top: 20px;
+      }
+      .gallery-images img{
+        width: 250px;
+        height: 180px;
+        object-fit:cover;
+        border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+      footer{
+        background-color: #03045e;
+        color:white;
+        text-align: center;
+        padding: 15px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Buds Dental Services
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contacts">Contact</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero" id="hero">
+      <h2>
+        Your smile, Our Passion
+      </h2>
+      <p>
+        High Quality Dental care for you and your Family
+      </p>
+    </section>
+    <section class="services" id="services">
+      <h2>
+        Our Services
+      </h2>  
+        <ul>
+          <li>Extraction</li>
+          <li>Scaling and Polishing (Teeth Cleaning)</li>
+          <li>Cosmetic Dentistry</li>
+          <li>Root canal treatment</li>
+          <li>Dental Checkups</li>
+          <li>Teeth Cementing(Restoration)</li>
+          <li>Artificial Teeth replacement:
+            <ul class="artificial">
+                       
+                <li>- crowns and brigdes</li>
+                <li class="dentures">- Dentures (removable teeth)</li>
+                <li >- Dental Implants</li>
+            
+        
+            </ul>
+          </li>
+          <li>Teeth whitening</li>
+          <li>Teeth splinting</li>
+          <li>Jaw/Arch splitting</li>
+          <li>Preventive Dental Care</li>
+          <li>Oral health Education</li>
+        </ul>
+
+    </section>
+    <section class="appointment" id="appointment">
+      <h2>
+        Book an appointment
+      </h2>
+      <form action="process-form.php" method="post">
+        <label for="name">
+          Full Name:
+        </label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="date">Prefered Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="message">Additional notes:</label>
+        <input id="message" name="message" rows="4"></textarea>
+        <button type="submit">Submit</button>   
+
+      </form>
+    </section>
+    <section class="about" id="about">
+      <h2>
+        About us
+      </h2>
+      We are friendly dental specialists dedicated to providing excellent affordable services with passion and expertise in a comftable environment to you and your family
+    
+    </section>   
+    <section class="location" id="location">
+      <h2>
+        Visit Us
+      </h2>
+      <p>
+        Nansana_Kyebando road,Room 2 FMG Phamarcy building ,opposite transformer after kyekabulengwa road 
+      </p>
+      <h3>
+        location on google map
+      </h3>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.735867238757!2d32.52064369618893!3d0.36835394370681085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177da50033e26d8b%3A0x9209ba88433bd7a3!2sBuds%20dental%20services!5e0!3m2!1sen!2sug!4v1748282379460!5m2!1sen!2sug" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+      </section>
+    <section class="gallery" id="gallery">
+      <h2>
+       Gallery
+      </h2>
+      <div class="gallery-images">
+        <img src="images/image1.jpg" alt="clinic image 1">
+       <img src="images/image2.jpg" alt="clinic image 2">
+        <img src="images/image3.jpg" alt="clinic image 3">
+        <img src="images/image4.jpg" alt="clinic image 4">
+        <img src="images/image5.jpg" alt="clinic image 5">
+        <img src="images/image6.jpg" alt="clinic image 6">
+        <img src="images/image7.jpg" alt="clinic image 7">
+        <img src="images/image8.jpg" alt="clinic image 8">
+        <img src="images/image9.jpg" alt="clinic image 9">
+        <img src="images/image10.jpg" alt="clinicimage 10">
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <h2>
+        Contacts
+      </h2>
+      <p> Call us on:
+        <ul>      
+          <li><a href="+256759710487">0759710487</a></li>
+          <li><a href="+256760984138">0760984138</a></li>
+        </ul> 
+        Email us on:
+        <p><a href="mailto:budsdentalservices@gmail.com">budsdentalservices@gmail.com</a></p>
+
+      </p>
+    </section>
+    <footer>
+      &copy;2025 Buds Dental Services. All rights reserved.
+    </footer>
+  </body>
+</html>
